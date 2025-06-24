@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />  <!-- fixed "UFT-8" to "UTF-8" -->
+    <title>LFS QUIZ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- for topics -->
+    <div class="topic-select"> <!-- fixed 'classs' to 'class' -->
+      <h1>LIFE SCIENCE QUIZ</h1>
+      <label for="topic-select">Choose a topic:</label>
+      <select name="topic-select" id="topic-select">
+        <option value="" disabled selected>Select a topic</option> <!-- Added a default option -->
+        <option value="Photosynthesis">Photosynthesis</option>
+        <option value="Animal Nutrition">Animal Nutrition</option>
+        <option value="Respiration">Respiration</option>
+        <option value="Gas Exchange">Gas Exchange</option>
+        <option value="Excretion In Humans">Excretion In Humans</option>
+        <option value="Biodiversity And Classification Of Microorganisms">Biodiversity Of Microorganisms</option>
+        <option value="Biodiversity In Plants And Reproduction">Biodiversity In Plants And Reproduction</option>
+        <option value="Biodiversity Of Animals">Biodiversity Of Animals</option>
+        <option value="Population Ecology">Population Ecology</option>
+        <option value="Human Impact On The Environment">Human Impact On The Environment</option>
+      </select>
+      <button id="start-btn">Start quiz</button>
+    </div>
+
+    <div class="quiz-container" style="display:none;">
+      <p id="question">Question will appear here</p>
+      <div id="options"></div>
+      <button id="next-btn" disabled>Next question</button> <!-- fixed id from next-btnn to next-btn -->
+    </div>
+
+
+    <script src="script.js"></script>
+    <footer>
+      <p>Created by Maboe Siyabonga &copy; 2025</p>
+    </footer>
+  </body>
+</html>
