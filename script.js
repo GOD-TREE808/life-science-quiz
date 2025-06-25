@@ -1,411 +1,609 @@
 const quizData = {
-  "Photosynthesis": [
-    {
-      question: "Which gas is released during photosynthesis?",
-      options: ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
-      answer: "Oxygen"
-    },
-    {
-      question: "What organelle is responsible for photosynthesis?",
-      options: ["Mitochondria", "Chloroplast", "Nucleus", "Ribosome"],
-      answer: "Chloroplast"
-    },
-    {
-      question: "Plants use oxygen...",
-      options: ["continuously", "During the day only", "During the nihgt only", "During photosynthesis only"],
-      answer: "continuously"
-    },
-    {
-      question: "The green, light-trapping pigment in photosynthesis found in plant leaves is?",
-      options: ["Chloroplast", "Chlorophyll", "Anthocyanin", "Caarotene"],
-      answer: "Chlorophyll"
-    },
-    {
-      question: "Molecule that stores energy?",
-      options: ["ATP", "ADP", "DNA", "RNA"],
-      answer:  "ATP"
-    }
-  ],
-  "Animal Nutrition": [
-    {
-      question: "Which enzyme digests proteins in the stomach?",
-      options: ["Amylase", "Lipase", "Pepsin", "Maltase"],
-      answer: "Pepsin"
-    },
-    {
-      question: "If the pancreatic duct is cut.",
-      options: ["protein digestion will not be affected",
-      "Homeostatic control of glucose will be affected",
-      "Carbohydrates digestion will be affected",
-      "Carbohydrates digestion will not be affected"],
-      answer: "Carbohydrates digestion will be affected"
-    },
-    {
-      question: "What is the function of the salivary glands in the mouth?",
-      options: [
-        "To churn food with acid",
-        "To grind food mechanically",
-        "To release enzymes that chemically digest carbohydrates",
-        "To absorb nutrients into the blood"
+  "Photosynthesis": {
+    "Course 1": [
+      {
+        question: "Which gas diffuses into the leaves of plants for photosynthesis?",
+        options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+        answer: "Carbon dioxide"
+      },
+      {
+        question: "What carbohydrate is formed during photosynthesis?",
+        options: ["Protein", "Glycogen", "Glucose", "Cellulose"],
+        answer: "Glucose"
+      },
+      {
+        question: "Where is water absorbed from in a plant?",
+        options: ["Leaves", "Stem", "Soil", "Air"],
+        answer: "Soil"
+      },
+      {
+        question: "What gas is released from the leaves during photosynthesis?",
+        options: ["Carbon dioxide", "Hydrogen", "Nitrogen", "Oxygen"],
+        answer: "Oxygen"
+      },
+      {
+        question: "What kind of energy is absorbed by the leaves of a plant?",
+        options: ["Kinetic energy", "Radiant energy", "Thermal energy", "Chemical energy"],
+        answer: "Radiant energy"
+      },
+      {
+        question: "Which green pigment is responsible for absorbing light?",
+        options: ["Chlorophyll", "Melanin", "Carotene", "Xanthophyll"],
+        answer: "Chlorophyll"
+      },
+      {
+        question: "Where are enzymes for photosynthesis found?",
+        options: ["Nucleus", "Chloroplast", "Cytoplasm", "Vacuole"],
+        answer: "Chloroplast"
+      },
+      {
+        question: "What is the function of thylakoids in photosynthesis?",
+        options: ["Absorb oxygen", "Store glucose", "Contain chlorophyll", "Transport water"],
+        answer: "Contain chlorophyll"
+      },
+      {
+        question: "Where does the light-dependent phase of photosynthesis occur?",
+        options: ["Stroma", "Thylakoid", "Mitochondria", "Nucleus"],
+        answer: "Thylakoid"
+      },
+      {
+        question: "Where does the light-independent phase of photosynthesis occur?",
+        options: ["Grana", "Stroma", "Chlorophyll", "Lumen"],
+        answer: "Stroma"
+      },
+      {
+        question: "What is the definition of photosynthesis?",
+        options: [
+          "Process of digesting food",
+          "Breaking down glucose for energy",
+          "Chemical process by which glucose is produced using radiant energy",
+          "Physical breakdown of food"
+        ],
+        answer: "Chemical process by which glucose is produced using radiant energy"
+      },
+      {
+        question: "What is metabolism?",
+        options: [
+          "A type of photosynthesis",
+          "Chemical processes in organisms controlled by enzymes",
+          "Breathing process in humans",
+          "The digestion of food"
+        ],
+        answer: "Chemical processes in organisms controlled by enzymes"
+      },
+      {
+        question: "What is anabolism?",
+        options: [
+          "Breaking down molecules",
+          "Building up chemical reactions",
+          "Muscle contractions",
+          "Photosynthesis in animals"
+        ],
+        answer: "Building up chemical reactions"
+      },
+      {
+        question: "What is catabolism?",
+        options: [
+          "Building molecules",
+          "Transporting enzymes",
+          "Breaking down chemical reactions",
+          "Digesting proteins"
+        ],
+        answer: "Breaking down chemical reactions"
+      },
+      {
+        question: "Which solution is used to test for starch?",
+        options: ["Benedict's solution", "Iodine solution", "Biuret solution", "Sudan III"],
+        answer: "Iodine solution"
+      },
+      {
+        question: "What result indicates the presence of starch with iodine?",
+        options: ["Red", "Blue-black", "Green", "Colorless"],
+        answer: "Blue-black"
+      },
+      {
+        question: "What does autotrophic mean?",
+        options: [
+          "Needs to eat other organisms",
+          "Cannot photosynthesize",
+          "Produces own food through photosynthesis",
+          "Releases oxygen during respiration"
+        ],
+        answer: "Produces own food through photosynthesis"
+      },
+      {
+        question: "What does heterotrophic mean?",
+        options: [
+          "Can photosynthesize",
+          "Obtains food from other organisms",
+          "Lives underwater",
+          "Has chlorophyll"
+        ],
+        answer: "Obtains food from other organisms"
+      },
+      {
+        question: "What organelle in plant cells is the site of photosynthesis?",
+        options: ["Mitochondrion", "Chloroplast", "Vacuole", "Ribosome"],
+        answer: "Chloroplast"
+      },
+      {
+        question: "What is the liquid part of the chloroplast called?",
+        options: ["Grana", "Thylakoid", "Stroma", "Cytosol"],
+        answer: "Stroma"
+      }
+    ]
+  },
+  "Animal Nutrition": {
+   "Course 1": [
+      {
+        question: "Which enzyme digests proteins in the stomach?",
+        options: ["Amylase", "Lipase", "Pepsin", "Maltase"],
+        answer: "Pepsin"
+      },
+      {
+        question: "If the pancreatic duct is cut.",
+        options: ["protein digestion will not be affected",
+        "Homeostatic control of glucose will be affected",
+        "Carbohydrates digestion will be affected",
+        "Carbohydrates digestion will not be affected"],
+        answer: "Carbohydrates digestion will be affected"
+      },
+      {
+        question: "What is the function of the salivary glands in the mouth?",
+        options: [
+          "To churn food with acid",
+          "To grind food mechanically",
+          "To release enzymes that chemically digest carbohydrates",
+          "To absorb nutrients into the blood"
       ],
-      answer: "To release enzymes that chemically digest carbohydrates"
-    },
-    {
-      question: "What prevents food from entering the trachea?",
-      options: [
+        answer: "To release enzymes that chemically digest carbohydrates"
+      },
+      {
+        question: "What prevents food from entering the trachea?",
+        options: [
         "Larynx",
         "Epiglottis",
         "Tongue",
         "Palate"
       ],
-      answer: "Epiglottis"
-    },
-    {
-      question: "What is the main process that moves food down the oesophagus?",
-      options: [
+        answer: "Epiglottis"
+      },
+      {
+        question: "What is the main process that moves food down the oesophagus?",
+        options: [
         "Churning",
         "Diffusion",
         "Swallowing",
         "Peristalsis"
       ],
-      answer: "Peristalsis"
-    },
-    {
-      question: "What is chyme?",
-      options: [
+        answer: "Peristalsis"
+      },
+      {
+        question: "What is chyme?",
+        options: [
         "Partially digested food mixed with gastric juices",
         "Food and saliva in the mouth",
         "Waste in the rectumn",
         "Bile mixed with pancreatic juices"
       ],
-      answer: "Partially digested food mixed with gastric juices"
-    },
-    {
-      question: "Which organ stores bile before it's released into the small intestine?",
-      options: [
+        answer: "Partially digested food mixed with gastric juices"
+      },  
+      {
+        question: "Which organ stores bile before it's released into the small intestine?",
+        options: [
         "Liver",
         "Pancreas",
         "Gall bladder",
         "Stomach"
       ],
-      answer: "Gall bladder"
-    },
-    {
-      question: "Which of the following is a function of bile?",
-      options: [
+        answer: "Gall bladder"
+      },
+      {
+        question: "Which of the following is a function of bile?",
+        options: [
         "Emulsifies fats and neutralizes chyme",
         "Produces insulin",
         "Digests proteins",
         "Absorbs nutrients"
       ],
-      answer: "Emulsifies fats and neutralizes chyme"
-    },
-    {
-      question: "What part of the small intestine receives bile and pancreatic juice?",
-      options: [
+        answer: "Emulsifies fats and neutralizes chyme"
+      },
+      {
+        question: "What part of the small intestine receives bile and pancreatic juice?",
+        options: [
         "Ileum",
         "Duodenum",
         "Jejunum",
         "Colon"
       ],
-      answer: "Duodenum"
-    },
-    {
-      question: "What is a villus?",
-      options: [
+        answer: "Duodenum"
+      },
+      {
+        question: "What is a villus?",
+        options: [
         "A muscle that contracts the stomach",
         "A small flap preventing food entry into lungs",
         "A finger-like projection for absorption",
         "A section of the large intestine"
       ],
-      answer: "A finger-like projection for absorption"
-    },
-    {
-      question: "Which gland helps regulate blood glucose levels?",
-      options: [
+        answer: "A finger-like projection for absorption"
+      },
+      {
+        question: "Which gland helps regulate blood glucose levels?",
+        options: [
         "Salivary gland",
         "Pancreas (endocrine function)",
         "Gall bladder",
         "Stomach"
       ],
-      answer: "Pancreas (endocrine function)"
-    },
-    {
-      question: "What is the correct order of digestive processes?",
-      options: [
+        answer: "Pancreas (endocrine function)"
+      },
+      {
+        question: "What is the correct order of digestive processes?",
+        options: [
         "Digestion → Ingestion → Absorption → Egestion",
         "Ingestion → Absorption → Digestion → Egestion",
         "Ingestion → Digestion → Absorption → Egestion",
         "Assimilation → Ingestion → Digestion → Egestion"
       ],
-      answer: "Ingestion → Digestion → Absorption → Egestion"
-    },
-    {
-      question: "What is a bolus?",
-      options: [
+        answer: "Ingestion → Digestion → Absorption → Egestion"
+      },
+      {
+        question: "What is a bolus?",
+        options: [
         "A hormone secreted by the liver",
         "A fluid in the small intestine",
         "A mass of chewed food and saliva",
         "An enzyme that digests lipids"
       ],
-      answer: "A mass of chewed food and saliva"
-    },
-    {
-      question: "What is the function of the soft palate?",
-      options: [
+        answer: "A mass of chewed food and saliva"
+      },
+      {
+        question: "What is the function of the soft palate?",
+        options: [
         "Secretes bile",
         "Secretes saliva",
         "Forms the roof of the mouth",
         "Pushes food into the stomach"
       ],
-      answer: "Forms the roof of the mouth"
-    },
-    {
-      question: "Which part of the digestive system churns food and mixes it with acid?",
-      options: [
+        answer: "Forms the roof of the mouth"
+      },
+      {
+        question: "Which part of the digestive system churns food and mixes it with acid?",
+        options: [
         "Mouth",
         "Oesophagus",
         "Stomach",
         "Small intestine"
       ],
-      answer: "Stomach"
-    },
-    {
-      question: "What is assimilation?",
-      options: [
+        answer: "Stomach"
+      },
+      {
+        question: "What is assimilation?",
+        options: [
         "Swallowing food",
         "Breaking down nutrients",
         "Removing waste",
         "Using nutrients in cells"
       ],
-      answer: "Using nutrients in cells"
-    },
-    {
-      question: "Which part of the digestive system is most responsible for nutrient absorption?",
-      options: [
+        answer: "Using nutrients in cells"
+      },
+      {
+        question: "Which part of the digestive system is most responsible for nutrient absorption?",
+        options: [
         "Stomach",
         "Small intestine",
         "Large intestine",
         "Pancreas"
       ],
-      answer: "Small intestine"
-    },
-    {
-      question: "What is the main site of nutrient absorption?",
-      options: ["Stomach", "Large intestine", "Small intestine", "rectumn"],
-      answer: "Small intestine"
-    },
-    {
-      question: "Whih ONE of the following is not part of the alimentary canal?",
-      options: ["Stomach", "Colon", "Pancreas", "Appendix"],
-      answer: "Appendix"
-    },
-    {
-      question: "Where does emulsification of fat occur?in the...",
-      options: ["Liver", "Colon", "Gallbladder", "Small intestine"],
-      answer: "Small intestine"
-    }
-  ],
-  "Respiration": [
-    {
-      question: "What is the main product of cellular respiration?",
-      options: ["Oxygen", "Carbon dioxide", "ATP", "Glucose"],
-      answer: "ATP"
-    },
-    {
-      question: "Name the biochemical process used to brew traditional African BEER.",
-      options: ["Fermentation", "Reproduction", "photosynthesis", "sunlight"],
-      answer: "Fermentation"
-    },
-    {
-      question: "The conversion of pyruvic acid into lactic acid occurs during",
-      options: ["Photolysis", "Glycolysis", "Anaerobic respiration", "Oxidation of glucose"],
-      answer: "Anaerobic respiration"
-    },
-    {
-      question: "The phase that does not require oxygen during cellular respiration:",
-      options: ["Krebs cycle", "Glycolysis", "Oxidative phosphorylation", "ALL OF THEM"],
-      answer: "Glycolysis"
-    },
-    {
-      question: "The process during which glucose is converted into pyruvic acid.",
-      options: ["Krebs cycle", "Glycolysis", "Oxidative phosphorylation", "Photolysis"],
-      answer: "Glycolysis"
-    },
-    {
-      question: "The reagent used to test for the presence of carbon dioxide.",
-      options: ["Iodine solution", "Benedict’s solution", "Limewater", "Ethanol"],
-      answer: "Limewater"
-    },
-    {
-      question: "The acid that accumulates in the muscles of humans during continuous strenuous physical activity.",
-      options: ["Pyruvic acid", "Citric acid", "Lactic acid", "Acetic acid"],
-      answer: "Lactic acid"
-    },
-    {
-      question: "The gas which is essential for the Krebs cycle to occur.",
-      options: ["Carbon dioxide", "Oxygen", "Hydrogen", "Nitrogen"],
-      answer: "Oxygen"
-    },
-    {
-      question: "Folded structures found on the inner membrane of a mitochondrion.",
-      options: ["Grana", "Cristae", "Villi", "Cilia"],
-      answer: "Cristae"
-    },
-    {
-      question: "The stage of aerobic respiration that releases carbon dioxide.",
-      options: ["Glycolysis", "Krebs cycle", "Electron transport chain", "Fermentation"],
-      answer: "Krebs cycle"
-    },
-    {
-      question: "Genetic material found in the mitochondrial matrix.",
-      options: ["DNA", "mRNA", "Chromatin", "tRNA"],
-      answer: "DNA"
-    },
-    {
-      question: "The stage during aerobic respiration when water is released as a waste product.",
-      options: ["Glycolysis", "Krebs cycle", "Electron transport chain", "Fermentation"],
-      answer: "Electron transport chain"
-    }, 
-    {
-      question: "The type of anaerobic respiration that occurs in yeast cells.",
-      options: ["Lactic acid fermentation", "Alcoholic fermentation", "Aerobic respiration", "Photosynthesis"],
-      answer: "Alcoholic fermentation"
-    },
-    {
-      question: "The organelle in which respiration takes place.",
-      options: ["Chloroplast", "Ribosome", "Nucleus", "Mitochondrion"],
-      answer: "Mitochondrion"
-    },
-    {
-      question: "The end product of anaerobic respiration in humans",
-      options: ["Lactic acid", "Ethanol"],
-      answer: "Lactic acid"
-    },
-    {
-      question: "A product of cellular respiration which supplies energy needed for metabolic reactions in cells",
-      options: ["ATP", "Oxygen"],
-      answer: "ATP"
-    },
-    {
-      question: "The fuel required for cellular respiration",
-      options: ["Glycogen", "Glucagon"],
-      answer: "Glycogen"
-    },
-    {
-      question: "Which of the following uses fermentation in its production?",
-      options: ["Bread", "Chips", "Soda water", "Orange juice"],
-      answer: "Bread"
-    },
-    {
-      question: "How does fermentation-based food production help the South African economy?",
-      options: [
+        answer: "Small intestine"
+      },
+      {
+        question: "What is the main site of nutrient absorption?",
+        options: ["Stomach", "Large intestine", "Small intestine", "rectumn"],
+        answer: "Small intestine"
+      },
+      {
+        question: "Whih ONE of the following is not part of the alimentary canal?",
+        options: ["Stomach", "Colon", "Pancreas", "Appendix"],
+        answer: "Appendix"
+      },
+      {
+        question: "Where does emulsification of fat occur?in the...",
+        options: ["Liver", "Colon", "Gallbladder", "Small intestine"],
+        answer: "Small intestine"
+      }
+    ]
+  },
+  "Respiration":  {
+    "Course 1": [
+      {
+        question: "What is the main product of cellular respiration?",
+        options: ["Oxygen", "Carbon dioxide", "ATP", "Glucose"],
+        answer: "ATP"
+      },
+      {
+        question: "Name the biochemical process used to brew traditional African BEER.",
+        options: ["Fermentation", "Reproduction", "photosynthesis", "sunlight"],
+        answer: "Fermentation"
+      },
+      {
+        question: "The conversion of pyruvic acid into lactic acid occurs during",
+        options: ["Photolysis", "Glycolysis", "Anaerobic respiration", "Oxidation of glucose"],
+        answer: "Anaerobic respiration"
+      },
+      {
+        question: "The phase that does not require oxygen during cellular respiration:",
+        options: ["Krebs cycle", "Glycolysis", "Oxidative phosphorylation", "ALL OF THEM"],
+        answer: "Glycolysis"
+      },
+      {
+        question: "The process during which glucose is converted into pyruvic acid.",
+        options: ["Krebs cycle", "Glycolysis", "Oxidative phosphorylation", "Photolysis"],
+        answer: "Glycolysis"
+      },
+      {
+        question: "The reagent used to test for the presence of carbon dioxide.",
+        options: ["Iodine solution", "Benedict’s solution", "Limewater", "Ethanol"],
+        answer: "Limewater"
+      },
+      {
+        question: "The acid that accumulates in the muscles of humans during continuous strenuous physical activity.",
+        options: ["Pyruvic acid", "Citric acid", "Lactic acid", "Acetic acid"],
+        answer: "Lactic acid"
+      },
+      {
+        question: "The gas which is essential for the Krebs cycle to occur.",
+        options: ["Carbon dioxide", "Oxygen", "Hydrogen", "Nitrogen"],
+        answer: "Oxygen"
+      },
+      {
+        question: "Folded structures found on the inner membrane of a mitochondrion.",
+        options: ["Grana", "Cristae", "Villi", "Cilia"],
+        answer: "Cristae"
+      },
+      {
+        question: "The stage of aerobic respiration that releases carbon dioxide.",
+        options: ["Glycolysis", "Krebs cycle", "Electron transport chain", "Fermentation"],
+        answer: "Krebs cycle"
+      },
+      {
+        question: "Genetic material found in the mitochondrial matrix.",
+        options: ["DNA", "mRNA", "Chromatin", "tRNA"],
+        answer: "DNA"
+      },
+      {
+        question: "The stage during aerobic respiration when water is released as a waste product.",
+        options: ["Glycolysis", "Krebs cycle", "Electron transport chain", "Fermentation"],
+        answer: "Electron transport chain"
+      }, 
+      {
+        question: "The type of anaerobic respiration that occurs in yeast cells.",
+        options: ["Lactic acid fermentation", "Alcoholic fermentation", "Aerobic respiration", "Photosynthesis"],
+        answer: "Alcoholic fermentation"
+      }, 
+      {
+        question: "The organelle in which respiration takes place.",
+        options: ["Chloroplast", "Ribosome", "Nucleus", "Mitochondrion"],
+        answer: "Mitochondrion"
+      },
+      {
+        question: "The end product of anaerobic respiration in humans",
+        options: ["Lactic acid", "Ethanol"],
+        answer: "Lactic acid"
+      }, 
+      {
+        question: "A product of cellular respiration which supplies energy needed for metabolic reactions in cells",
+        options: ["ATP", "Oxygen"],
+        answer: "ATP"
+      },
+      { 
+        question: "The fuel required for cellular respiration",
+        options: ["Glycogen", "Glucagon"],
+        answer: "Glycogen"
+      },
+      {
+        question: "Which of the following uses fermentation in its production?",
+        options: ["Bread", "Chips", "Soda water", "Orange juice"],
+        answer: "Bread"
+      }, 
+      {
+        question: "How does fermentation-based food production help the South African economy?",
+        options: [
       "It helps reduce inflation",
       "It reduces food imports",
       "It creates jobs and boosts local industry",
       "It reduces energy use in households"
     ],
-    answer: "It creates jobs and boosts local industry"
-    },
-    {
-      question: "Molecule that stores energy",
-      options: ["ADP", "ATP"],
-      answer: "ATP"
-    }
- ],
-  "Gas Exchange": [
-    {
-      question: "Where does gas exchange occur in humans?",
-      options: ["Trachea", "Alveoli", "Bronchi", "Diaphragm"],
-      answer: "Alveoli"
-    }
-  ],
-  "Excretion In Humans": [
-    {
-      question: "Which organ filters blood to form urine?",
-      options: ["Heart", "Liver", "Kidney", "Lung"],
-      answer: "Kidney"
-    }
-  ],
-  "Biodiversity And Classification Of Microorganisms": [
-    {
-      question: "Which kingdom do bacteria belong to?",
-      options: ["Protista", "Monera", "Fungi", "Plantae"],
-      answer: "Monera"
-    }
-  ],
-  "Biodiversity In Plants And Reproduction": [
-    {
-      question: "Which part of the flower produces pollen?",
-      options: ["Style", "Ovary", "Anther", "Petal"],
-      answer: "Anther"
-    }
-  ],
-  "Biodiversity Of Animals": [
-    {
-      question: "Which group includes animals with a backbone?",
-      options: ["Invertebrates", "Vertebrates", "Arthropods", "Mollusks"],
-      answer: "Vertebrates"
-    }
-  ],
-  "Population Ecology": [
-    {
-      question: "What is carrying capacity?",
-      options: [
-        "Number of predators",
-        "Maximum number of individuals an environment can support",
-        "Birth rate",
-        "Death rate"
-      ],
-      answer: "Maximum number of individuals an environment can support"
-    }
-  ],
-  "Human Impact On The Environment": [
-    {
-      question: "Which gas contributes most to global warming?",
-      options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
-      answer: "Carbon dioxide"
-    }
-  ]
+      answer: "It creates jobs and boosts local industry"
+      },
+      {
+        question: "Molecule that stores energy",
+        options: ["ADP", "ATP"],
+        answer: "ATP"
+      }
+    ]
+  },
+  "Gas Exchange": {
+    "Course 1": [
+      {
+        question: "What is the mechanical process of inhalation and exhalation called?",
+        options: ["Diffusion", "Ventilation", "Cellular respiration", "Osmosis"],
+        answer: "Ventilation"  
+      },
+      {  
+        question: "What is the primary site of gas exchange in humans?",
+        options: ["Trachea", "Bronchi", "Alveoli", "Larynx"],
+        answer: "Alveoli    "    
+      },
+      {
+        question: "What gas diffuses into the blood at the lungs?",
+        options: ["Carbon dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+        answer: "Oxygen"
+      },
+      {
+        question: "What property is NOT a requirement of an efficient gaseous exchange surface?",
+        options: ["Large surface area", "Thick surface", "Moisture", "Protection"],
+        answer: "Thick surface"
+      },
+      {
+        question: "Why must gaseous exchange surfaces be moist?",
+        options: ["To allow oxygen to dissolve for diffusion", "To block bacteria", "To increase heat", "To harden the surface"],
+        answer: "To allow oxygen to dissolve for diffusion"
+      },
+      {
+        question: "Which structure protects the gills in bony fish?",
+        options: ["Operculum", "Spiracle", "Exoskeleton", "Trachea"],
+        answer: "Operculum"
+      },
+      {
+        question: "In which organism does gas exchange happen through the skin?",
+        options: ["Fish", "Insect", "Earthworm", "Mammal"],
+        answer: "Earthworm"
+      },
+      {
+        question: "What system transports gases in mammals?",
+        options: ["Digestive", "Respiratory", "Nervous", "Circulatory"],
+        answer: "Circulatory"
+      },
+      {
+        question: "What ensures a continuous supply of oxygen-rich air to gaseous exchange surfaces?",
+        options: ["Diffusion", "Ventilation", "Filtration", "Evaporation"],
+        answer: "Ventilation"
+      },
+      {
+        question: "What type of respiration occurs in the presence of oxygen?",
+        options: ["Anaerobic", "Aerobic", "Glycolysis", "Fermentation"],
+        answer: "Aerobic"
+      },
+      {
+        question: "Which part of the leaf allows gaseous exchange in plants?",
+        options: ["Cuticle", "Stomata", "Xylem", "Phloem"],
+        answer: "Stomata"
+      },
+      {
+        question: "Which organism uses a tracheal system for gas exchange?",
+        options: ["Fish", "Insect", "Worm", "Frog"],
+        answer: "Insect"
+      },
+      {
+        question: "What is diffusion?",
+        options: [
+          "Movement of molecules from low to high concentration",
+          "Active transport of oxygen",
+          "Random movement of water",
+          "Movement of molecules from high to low concentration"
+        ],
+        answer: "Movement of molecules from high to low concentration"
+      }, 
+      {
+        question: "Why is a large surface area important for gas exchange?",
+        options: ["To trap air", "To reduce water loss", "To increase diffusion", "To block sunlight"],
+        answer: "To increase diffusion"
+      },
+      {
+        question: "Which animal has rhythmic body movements to ventilate its tracheae?",
+        options: ["Fish", "Earthworm", "Insect", "Bird"],
+        answer: "Insect"
+      }, 
+      {
+        question: "What is the gaseous exchange organ in bony fish?",
+        options: ["Lungs", "Skin", "Tracheae", "Gills"],
+        answer: "Gills"
+      },
+      {
+        question: "Which condition affects the efficiency of gas exchange?",
+        options: ["Good posture", "Lung disease", "High temperature", "Hydration"],
+        answer: "Lung disease"
+      },
+      {
+        question: "What is cellular respiration?",
+        options: [
+          "Inhalation of gases",
+          "Gas exchange in the lungs",
+          "Breakdown of glucose for energy",
+          "Photosynthesis in plants"
+        ],
+        answer: "Breakdown of glucose for energy"
+      },
+      {
+        question: "How are gases transported in insects?",
+        options: ["Via blood", "Via skin", "Via tracheae", "Via mouth"],
+        answer: "Via tracheae"
+      },
+      {
+        question: "What is the correct order in mammals?",
+        options: [
+          "Breathing → Cellular respiration → Gaseous exchange",
+          "Gaseous exchange → Breathing → Respiration",
+          "Breathing → Gaseous exchange → Cellular respiration",
+          "Respiration → Breathing → Gaseous exchange"
+        ],
+        answer: "Breathing → Gaseous exchange → Cellular respiration"
+     }
+   ]
+  }  
 };
 
+
+
+
+
 const topicSelect = document.getElementById("topic-select");
+const courseSelect = document.getElementById("course-select");
 const startBtn = document.getElementById("start-btn");
 const quizContainer = document.querySelector(".quiz-container");
 const questionEl = document.getElementById("question");
 const optionsEl = document.getElementById("options");
 const nextBtn = document.getElementById("next-btn");
 
-let currentQuestionIndex = 0;
-let currentTopicQuestions = [];
-let score = 0;
+let currentTopic = "";
+let currentCourse = "";
+let questions = [];
+let currentIndex = 0;
+let score = 0;     
+
+
+topicSelect.addEventListener("change", () => {
+  currentTopic = topicSelect.value;
+  courseSelect.innerHTML = '<option value="">-- Select a course --</option>';
+
+  if (quizData[currentTopic]) {
+    courseSelect.disabled = false;
+    const courses = Object.keys(quizData[currentTopic]);
+    courses.forEach(course => {
+      const opt = document.createElement("option");
+      opt.value = course;
+      opt.textContent = course;
+      courseSelect.appendChild(opt);
+    });
+  } else {
+    courseSelect.disabled = true;
+  }
+});
 
 startBtn.addEventListener("click", () => {
-  const selectedTopic = topicSelect.value;
-  if (!selectedTopic) return alert("Please select a topic.");
+  currentTopic = topicSelect.value;
+  currentCourse = courseSelect.value;
 
-  // Prepare quiz
-  currentTopicQuestions = [...quizData[selectedTopic]];
-  shuffleArray(currentTopicQuestions);
-  currentQuestionIndex = 0;
+  if (!quizData[currentTopic] || !quizData[currentTopic][currentCourse]) {
+    alert("Please select a valid topic and course.");
+    return;
+  }
+
+  questions = [...quizData[currentTopic][currentCourse]];
+  shuffleArray(questions);
+  currentIndex = 0;
   score = 0;
 
   document.querySelector(".topic-select").style.display = "none";
   quizContainer.style.display = "block";
+
   loadQuestion();
 });
 
-nextBtn.addEventListener("click", () => {
-  currentQuestionIndex++;
-  if (currentQuestionIndex < currentTopicQuestions.length) {
-    loadQuestion();
-  } else {
-    showResults();
-  }
-});
-
 function loadQuestion() {
-  const currentQ = currentTopicQuestions[currentQuestionIndex];
+  const currentQ = questions[currentIndex];
   questionEl.textContent = currentQ.question;
   optionsEl.innerHTML = "";
   nextBtn.disabled = true;
@@ -436,17 +634,29 @@ function selectAnswer(button, correctAnswer) {
   nextBtn.disabled = false;
 }
 
+nextBtn.addEventListener("click", () => {
+  currentIndex++;
+  if (currentIndex < questions.length) {
+    loadQuestion();
+  } else {
+    showResults();
+  }
+});
+
 function showResults() {
   quizContainer.innerHTML = `
     <h2>Quiz Completed</h2>
-    <p>Your Score: ${score} / ${currentTopicQuestions.length}</p>
+    <p>Your Score: ${score} / ${questions.length}</p>
+
+
+
     <button onclick="location.reload()">Try Another Topic</button>
   `;
 }
-
 function shuffleArray(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
 }
+
