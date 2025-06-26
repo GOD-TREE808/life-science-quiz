@@ -542,7 +542,126 @@ const quizData = {
         answer: "Breathing → Gaseous exchange → Cellular respiration"
      }
    ]
-  }  
+  },
+  "Excretion In Humans": {
+    "Course 1": [
+      {
+        question: "What is the process of regulating water levels in the body called?",
+        options: ["Excretion", "Filtration", "Osmoregulation", "Respiration"],
+        answer: "Osmoregulation"
+      },
+      {
+        question: "Which of the following is NOT a function of the kidney?",
+        options: [
+          "Regulation of pH of body fluids",
+          "Regulation of body temperature",
+          "Excretion of nitrogenous waste",
+          "Regulation of salt concentration"
+        ],
+        answer: "Regulation of body temperature"
+      },
+      {
+        question: "What is the name of the artery that brings oxygenated, unfiltered blood to the kidneys?",
+        options: ["Renal vein", "Pulmonary artery", "Aorta", "Renal artery"],
+        answer: "Renal artery"
+      },
+      {
+        question: "Which part of the urinary system transports urine to the bladder?",
+        options: ["Urethra", "Renal vein", "Ureter", "Renal artery"],
+        answer: "Ureter"
+      },
+      {
+        question: "What structure stores urine before it leaves the body?",
+        options: ["Kidney", "Urethra", "Bladder", "Ureter"],
+        answer: "Bladder"
+      },
+      {
+        question: "Which of these protects the kidneys from infection?",
+        options: ["Adrenal gland", "Renal capsule", "Renal vein", "Aorta"],
+        answer: "Renal capsule"
+      },
+      {
+        question: "What carries filtered, deoxygenated blood away from the kidney?",
+        options: ["Renal vein", "Renal artery", "Aorta", "Vena cava"],
+        answer: "Renal vein"
+      },
+      {
+        question: "Where are the kidneys located in the body?",
+        options: [
+          "Near the heart",
+          "In the chest above the lungs",
+          "Halfway down the back under the ribcage",
+          "In the legs near the femur"
+        ],
+        answer: "Halfway down the back under the ribcage"
+      },
+      {
+        question: "Which organ removes urea from the blood?",
+        options: ["Skin", "Kidney", "Lungs", "Liver"],
+        answer: "Kidney"
+      },
+      {
+        question: "What does the urethra do in males?",
+        options: [
+          "Carries oxygen to kidneys",
+          "Carries urea to liver",
+          "Carries urine and seamen to the exterior",
+          "Stores urine"
+        ],
+        answer: "Carries urine and seamen to the exterior"
+      },
+      {
+        question: "Which blood vessel brings blood containing waste to the kidneys?",
+        options: ["Renal vein", "Aorta", "Renal artery", "Pulmonary vein"],
+        answer: "Renal artery"
+      },
+      {
+        question: "Which structure surrounds and protects the kidney?",
+        options: ["Renal pelvis", "Renal capsule", "Renal cortex", "Renal medulla"],
+        answer: "Renal capsule"
+      },
+      {
+        question: "Which organ is responsible for the formation of urea?",
+        options: ["Liver", "Kidney", "Skin", "Colon"],
+        answer: "Liver"
+      },
+      {
+        question: "Which substance is NOT normally found in urine?",
+        options: ["Urea", "Glucose", "Water", "Mineral salts"],
+        answer: "Glucose"
+      },
+      {
+        question: "What is the function of the adrenal gland on top of the kidney?",
+        options: ["Produce urine", "Secrete hormones", "Filter blood", "Store minerals"],
+        answer: "Secrete hormones"
+      },
+      {
+        question: "What happens if osmoregulation fails?",
+        options: ["Glucose levels drop", "Heart stops beating", "Body can't regulate water balance", "Urea increases in lungs"],
+        answer: "Body can't regulate water balance"
+      },
+      {
+        question: "Which organ removes carbon dioxide and water vapor?",
+        options: ["Liver", "Skin", "Lungs", "Kidneys"],
+        answer: "Lungs"
+      },
+      {
+        question: "What waste product is excreted by sweat glands?",
+        options: ["Carbon dioxide", "Mineral salts and urea", "Bile pigments", "Glucose"],
+        answer: "Mineral salts and urea"
+      },
+      {
+        question: "How does the skin assist in excretion?",
+        options: ["By absorbing oxygen", "By storing waste", "By producing sweat", "By regulating glucose"],
+        answer: "By producing sweat"
+      },
+      {
+        question: "Which organ deaminates amino acids to form urea?",
+        options: ["Liver", "Kidney", "Bladder", "Colon"],
+        answer: "Liver"
+      }
+    ]
+  }
 };
 
 
@@ -645,14 +764,19 @@ nextBtn.addEventListener("click", () => {
 
 function showResults() {
   quizContainer.innerHTML = `
-    <h2>Quiz Completed</h2>
-    <p>Your Score: ${score} / ${questions.length}</p>
+    <h2>🍾YOU DID IT🍾</h2>
+    <p>Your Score: <strong> ${score} / $
+{questions.length}</strong></p>
+    <button id="restart-btn" 
+class="cute-restart-btn">👌TRY ANOTHER TOPIC</
+button>
+ `;
+ 
+document.getElementById("restart-btn").addEventListener("click", () => {
+  location.reload();
+ })
+};
 
-
-
-    <button onclick="location.reload()">Try Another Topic</button>
-  `;
-}
 function shuffleArray(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
