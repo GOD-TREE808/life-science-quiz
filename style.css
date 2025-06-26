@@ -1,7 +1,7 @@
 /* Footer */
 footer {
   margin-top: 40px;
-  font-size: 15px;
+  font-size: 25px;
   color: yellow;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +13,7 @@ body {
   background: linear-gradient(135deg, #e0f7fa, #80deea);
   text-align: center;
   padding: 40px;
-  color: #22;
+  color: #222;
   transition: background-color 0.5s ease;
 }
 
