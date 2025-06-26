@@ -765,11 +765,9 @@ nextBtn.addEventListener("click", () => {
 function showResults() {
   quizContainer.innerHTML = `
     <h2>🍾YOU DID IT🍾</h2>
-    <p>Your Score: <strong> ${score} / $
-{questions.length}</strong></p>
+    <p>Your Score: <strong> ${score} /${questions.length}</strong></p>
     <button id="restart-btn" 
-class="cute-restart-btn">👌TRY ANOTHER TOPIC</
-button>
+class="cute-restart-btn">👌TRY ANOTHER TOPIC</button>
  `;
  
 document.getElementById("restart-btn").addEventListener("click", () => {
