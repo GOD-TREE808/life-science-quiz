@@ -661,6 +661,130 @@ const quizData = {
         answer: "Liver"
       }
     ]
+  },
+   "Biodiversity Of Microorganisms": {
+    "Course 1": [
+      {
+        question: "Which kingdom do bacteria belong to?",
+        options: ["Protista", "Monera", "Fungi", "Plantae"],
+        answer: "Monera"
+      },
+      {
+        question: "Which of the following microorganisms is considered non-cellular?",
+        options: ["Bacteria", "Fungi", "Viruses", "Protists"],
+        answer: "Viruses"
+      },
+      {
+        question: "Which microorganism causes athlete's foot?",
+        options: ["Bacteria", "Virus", "Fungus", "Protist"],
+        answer: "Fungus"
+      },
+      {
+        question: "Which statement best describes protists?",
+        options: [
+          "They are all multicellular",
+          "They are photosynthetic prokaryotes",
+          "They are mostly unicellular eukaryotes",
+          "They are non-living"
+        ],
+        answer: "They are mostly unicellular eukaryotes"
+      },
+      {
+        question: "How are viruses different from other microorganisms?",
+        options: [
+          "They have a nucleus",
+          "They perform respiration",
+          "They can only reproduce inside host cells",
+          "They are autotrophic"
+        ],
+        answer: "They can only reproduce inside host cells"
+      },
+      {
+        question: "Which group includes organisms that can photosynthesise and cause red tides?",
+        options: ["Fungi", "Dinoflagellates", "Bacteria", "Viruses"],
+        answer: "Dinoflagellates"
+      },
+      {
+        question: "What role do decomposer fungi play in ecosystems?",
+        options: [
+          "They fix nitrogen",
+          "They produce oxygen",
+          "They recycle nutrients by breaking down organic matter",
+          "They pollinate flowers"
+        ],
+        answer: "They recycle nutrients by breaking down organic matter"
+      },
+      {
+        question: "Which disease is caused by a protist?",
+        options: ["Influenza", "Malaria", "Tuberculosis", "Ringworm"],
+        answer: "Malaria"
+      },
+      {
+        question: "Which of these microorganisms reproduces by binary fission?",
+        options: ["Fungi", "Bacteria", "Virus", "Protist"],
+        answer: "Bacteria"
+      },
+      {
+        question: "Which of the following best describes the structure of a virus?",
+        options: [
+          "Cell wall, nucleus, and cytoplasm",
+          "Protein coat and nucleic acid",
+          "Mitochondria and chloroplasts",
+          "Capsule and ribosomes"
+        ],
+        answer: "Protein coat and nucleic acid"
+      },
+      {
+        question: "Which of these microorganisms helps ferment milk into yogurt?",
+        options: ["Fungi", "Bacteria", "Protist", "Virus"],
+        answer: "Bacteria"
+      },
+      {
+        question: "Which of the following diseases is caused by bacteria?",
+        options: ["HIV", "Tuberculosis", "Malaria", "Ringworm"],
+        answer: "Tuberculosis"
+      },
+      {
+        question: "Which microorganism can be used to make bread rise?",
+        options: ["Lactobacillus", "Yeast", "Salmonella", "E. coli"],
+        answer: "Yeast"
+      },
+      {
+        question: "What is the primary method of reproduction in fungi?",
+        options: ["Binary fission", "Budding", "Spore formation", "Mitosis"],
+        answer: "Spore formation"
+      },
+      {
+        question: "Which type of microorganism is used in the production of penicillin?",
+        options: ["Virus", "Bacterium", "Fungus", "Protist"],
+        answer: "Fungus"
+      },
+      {
+        question: "Which feature is common to all microorganisms?",
+        options: ["They are all visible to the naked eye", "They are multicellular", "They require a microscope to be seen", "They reproduce sexually only"],
+        answer: "They require a microscope to be seen"
+      },
+      {
+        question: "Which microorganisms are often used in genetic engineering?",
+        options: ["Fungi", "Viruses", "Bacteria", "Protists"],
+        answer: "Bacteria"
+      },
+      {
+        question: "Which of these microorganisms causes the disease AIDS?",
+        options: ["Fungus", "Protist", "Virus", "Bacterium"],
+        answer: "Virus"
+      },
+      {
+        question: "Which type of microorganism includes algae?",
+        options: ["Fungi", "Bacteria", "Protists", "Viruses"],
+        answer: "Protists"
+      },
+      {
+        question: "What do all prokaryotic microorganisms lack?",
+        options: ["Cell wall", "Cytoplasm", "Nucleus", "DNA"],
+        answer: "Nucleus"
+      }
+    ]
   }
 };
 
@@ -767,7 +891,8 @@ function showResults() {
     <h2>🍾YOU DID IT🍾</h2>
     <p>Your Score: <strong> ${score} /${questions.length}</strong></p>
     <button id="restart-btn" 
-class="cute-restart-btn">👌TRY ANOTHER TOPIC</button>
+class="cute-restart-btn">👌TRY ANOTHER TOPIC👌</
+button>
  `;
  
 document.getElementById("restart-btn").addEventListener("click", () => {
