@@ -1104,8 +1104,6 @@ const quizData = {
 
       {
 
-      {
-
         question: "Which of the following is NOT a function of the kidney?",
 
         options: [
