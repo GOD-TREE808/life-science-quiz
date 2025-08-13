@@ -870,7 +870,7 @@ const quizData = {
 
         options: ["Trachea", "Bronchi", "Alveoli", "Larynx"],
 
-        answer: "Alveoli    "    
+        answer: "Alveoli"    
 
       },
 
