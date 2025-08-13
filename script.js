@@ -2601,131 +2601,95 @@ startBtn.addEventListener("click", () => {
 
 });
 
-
-
 function loadQuestion() {
-
   const currentQ = questions[currentIndex];
-
   questionEl.textContent = currentQ.question;
-
   optionsEl.innerHTML = "";
-
   nextBtn.disabled = true;
 
-
-
   currentQ.options.forEach(option => {
-
     const btn = document.createElement("button");
-
     btn.textContent = option;
-
     btn.addEventListener("click", () => selectAnswer(btn, currentQ.answer));
-
     optionsEl.appendChild(btn);
-
   });
-
 }
-
-
 
 function selectAnswer(button, correctAnswer) {
-
   const buttons = optionsEl.querySelectorAll("button");
-
   buttons.forEach(btn => {
-
     btn.disabled = true;
-
     if (btn.textContent === correctAnswer) {
-
       btn.style.backgroundColor = "lightgreen";
-
     } else {
-
       btn.style.backgroundColor = "lightcoral";
-
     }
-
   });
 
-
-
   if (button.textContent === correctAnswer) {
-
     score++;
-
   }
-
-
 
   nextBtn.disabled = false;
-
 }
 
+// Show saved scores
+function displaySavedScores() {
+  const container = document.getElementById("previous-score");
+  let output = `<h3>📘 Your Stats:</h3><ul>`;
 
+  for (let i = 0; i < localStorage.length; i++) {
+    const topic = localStorage.key(i);
+    const result = localStorage.getItem(topic);
+    output += `<li><strong>${topic}:</strong> ${result}</li>`;
+  }
+
+  output += `</ul>`;
+  container.innerHTML = output;
+}
+
+// Clear all scores
+function clearScores() {
+  localStorage.clear();
+  alert("All stats cleared!");
+  location.reload();
+}
 
 nextBtn.addEventListener("click", () => {
-
   currentIndex++;
-
   if (currentIndex < questions.length) {
-
     loadQuestion();
-
   } else {
-
     showResults();
-
   }
-
 });
 
-
-
 function showResults() {
+  const topicKey = `${currentTopic} - ${currentCourse}`;
+  const scoreText = `${score} / ${questions.length}`;
 
+  // Save score to localStorage
+  localStorage.setItem(topicKey, scoreText);
+
+  // Show results and stats
   quizContainer.innerHTML = `
+    <h2>🎉 Quiz Completed! 🎉</h2>
+    <p>Your Score: <strong>${scoreText}</strong></p>
+    <button onclick="location.reload()">Try Again?</button>
+    <button onclick="clearScores()">🧹 Clear All Stats</button>
+    <div id="previous-score"></div>
+  `;
 
-    <h2>🍾YOU DID IT🍾</h2>
-
-    <p>Your Score: <strong> ${score} /${questions.length}</strong></p>
-
-    <button id="restart-btn" 
-
-class="cute-restart-btn">👌TRY ANOTHER TOPIC👌</
-
-button>
-
- `;
-
- 
-
-document.getElementById("restart-btn").addEventListener("click", () => {
-
-  location.reload();
-
- })
-
-};
-
-
-
-function shuffleArray(arr) {
-
-  for (let i = arr.length - 1; i > 0; i--) {
-
-    const j = Math.floor(Math.random() * (i + 1));
-
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-
-  }
-
+  displaySavedScores();
 }
 
+document.getElementById("restart-btn")?.addEventListener("click", () => {
+  location.reload();
+});
 
-
-          
-    
+function shuffleArray(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
