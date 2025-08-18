@@ -2677,6 +2677,15 @@ function showResults() {
     <p>Your Score: <strong>${scoreText}</strong></p>
     <button onclick="location.reload()">Try Again?</button>
     <button onclick="clearScores()">🧹 Clear All Stats</button>
+    <br>
+    <a href="https://twitter.com/intent/tweet?text=I%20scored%2085%25%20on%20the%20Life%20Science%20Quiz!%20Try%20it%20here%20https://god-tree808.github.io/life-science-quiz/" target="_blank">
+  🐦 Share on Twitter
+</a>
+
+<a href="https://wa.me/?text=I%20scored%2085%25%20on%20the%20Life%20Science%20Quiz!%20Try%20it%20here%20https://god-tree808.github.io/life-science-quiz/" target="_blank">
+  💬 Share on WhatsApp
+</a>
+    <br>
     <div id="previous-score"></div>
   `;
 
